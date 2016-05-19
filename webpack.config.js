@@ -6,7 +6,8 @@ module.exports = {
     entry: "./src/app.js",
     output: {
         path: path.join(__dirname, "static"),
-        filename: "bundle.js"
+        filename: "bundle.js",
+        publicPath: "/static/"
     },
     module: {
         loaders: [    // transformers
